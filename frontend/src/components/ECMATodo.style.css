@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Main section */
+section {
+  background: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 100vw;
+  position:relative;
+}
+section form,
+section .big-box {
+  background: #fff0;
+  height: 500px;
+  width: 450px;
+  padding: 50px 30px;
+  margin: 50px;
+  border: 1px solid #839ad7;
+  border-radius: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+section form{
+    border-top:none;
+    border-bottom:none;
+}
+section .big-box{
+    padding: 30px 30px;
+    border-left:none;
+    border-right:none;
+    overflow-y:scroll;
+    scrollbar-width:none;
+    -webkit-scrollbar-width: none;
+}
+section form input[type="text"] {
+  min-width: 100%;
+  min-height: 47px;
+  border: none;
+  color: #d7d7d7;
+  background: #202a46;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+section form input[type="text"]:active,
+section form input[type="text"]:focus {
+  background: #0000;
+  border: 1px solid #839ad7;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 20px #839ad7, 0px -2px 20px #839ad7;
+}
+section form textarea[type="text"] {
+  min-width: 100%;
+  min-height: 260px;
+  border: none;
+  color: #d7d7d7;
+  background: #202a46;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+section form textarea[type="text"]:active,
+section form textarea[type="text"]:focus {
+  background: #0000;
+  border: 1px solid #839ad7;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 20px #839ad7, 0px -2px 20px #839ad7;
+}
+section form button[type="submit"] {
+  font-size: 1.2em;
+  padding: 5px 20px;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #256afe, #5e3de2, #851ed4);
+  border: none;
+  border-radius: 10px;
+}
+section .big-box .box {
+  width: 100%;
+  background: linear-gradient(to bottom right, #256afe, #5e3de2, #851ed4);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+section .big-box .box h1 {
+  font-size: 1.2em;
+}
+section .big-box .box p {
+  font-size: 0.9em;
+  text-align: justify;
+}
+section .big-box .box button {
+  font-size: 0.9em;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #d7d7d7;
+  background: #202a46;
+}
+section .info{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:3px
+}
+section .info h1,section .info a{
+    color:white;
+    font-size: 10px;
+    text-decoration:none
+}
