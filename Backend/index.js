@@ -4,7 +4,7 @@ const ECMATodoroute = require("./routes/ECMATodoroutes")
 var cors = require("cors");
 
 const port = 8000;
-const db = "mongodb://localhost:27017";
+const db = "";
 
 
 const connectDB = async () => {
